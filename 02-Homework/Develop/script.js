@@ -28,9 +28,13 @@ function generatePassword() {
     if (content.length > 7 && content.length < 129) {
       love = true;
     }
+    else if (content.length === null){
+      return;
+    }
     else {
       alert('try again dumb ass.');
     }
+
   }
 
   //Prompting user if uppercase letters
